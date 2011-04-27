@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01 (Gilded Rose)", "01 (Gilded Rose)\01 (Gilded Rose).csproj", "{59445CAA-3C42-47B1-8E04-23952E0CDFAB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02 (To The Cloud)", "02 (To The Cloud)\02 (To The Cloud).csproj", "{7F65A4A4-D839-4A93-BB56-D98BC04D01D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,6 +15,10 @@ Global
 		{59445CAA-3C42-47B1-8E04-23952E0CDFAB}.Debug|x86.Build.0 = Debug|x86
 		{59445CAA-3C42-47B1-8E04-23952E0CDFAB}.Release|x86.ActiveCfg = Release|x86
 		{59445CAA-3C42-47B1-8E04-23952E0CDFAB}.Release|x86.Build.0 = Release|x86
+		{7F65A4A4-D839-4A93-BB56-D98BC04D01D3}.Debug|x86.ActiveCfg = Debug|x86
+		{7F65A4A4-D839-4A93-BB56-D98BC04D01D3}.Debug|x86.Build.0 = Debug|x86
+		{7F65A4A4-D839-4A93-BB56-D98BC04D01D3}.Release|x86.ActiveCfg = Release|x86
+		{7F65A4A4-D839-4A93-BB56-D98BC04D01D3}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

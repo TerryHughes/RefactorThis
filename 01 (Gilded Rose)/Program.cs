@@ -19,13 +19,13 @@ namespace RefactorThis.GildedRose
         {
             Assert(new List<int> { 10, 2, 5, 0, 15, 3 }, new List<int> { 20, 0, 7, 80, 20, 6 });
             UpdateQuality();
-            Assert(new List<int> { 9, 1, 4, 0, 14, 2 }, new List<int> { 19, 1, 6, 80, 21, 5 });
+            Assert(new List<int> { 9, 1, 4, 0, 14, 2 }, new List<int> { 19, 1, 6, 80, 21, 4 });
             UpdateQuality();
-            Assert(new List<int> { 8, 0, 3, 0, 13, 1 }, new List<int> { 18, 2, 5, 80, 22, 4 });
+            Assert(new List<int> { 8, 0, 3, 0, 13, 1 }, new List<int> { 18, 2, 5, 80, 22, 2 });
             UpdateQuality();
-            Assert(new List<int> { 7, -1, 2, 0, 12, 0 }, new List<int> { 17, 4, 4, 80, 23, 3 });
+            Assert(new List<int> { 7, -1, 2, 0, 12, 0 }, new List<int> { 17, 4, 4, 80, 23, 0 });
             UpdateQuality();
-            Assert(new List<int> { 6, -2, 1, 0, 11, -1 }, new List<int> { 16, 6, 3, 80, 24, 1 });
+            Assert(new List<int> { 6, -2, 1, 0, 11, -1 }, new List<int> { 16, 6, 3, 80, 24, 0 });
             UpdateQuality();
             Assert(new List<int> { 5, -3, 0, 0, 10, -2 }, new List<int> { 15, 8, 2, 80, 25, 0 });
             UpdateQuality();
@@ -74,6 +74,11 @@ namespace RefactorThis.GildedRose
                         if (Items[i].Name != "Sulfuras, Hand of Ragnaros")
                         {
                             Items[i].Quality = Items[i].Quality - 1;
+
+                            if (Items[i].Name == "Conjured Mana Cake")
+                            {
+                                Items[i].Quality = Items[i].Quality - 1;
+                            }
                         }
                     }
                 }

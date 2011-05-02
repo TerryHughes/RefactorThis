@@ -12,18 +12,12 @@ namespace RefactorThis.GildedRose
 
             if (this.Item.SellIn < 11)
             {
-                if (this.Item.Quality < 50)
-                {
-                    this.Item.Quality = this.Item.Quality + 1;
-                }
+                base.UpdateQuality();
             }
 
             if (this.Item.SellIn < 6)
             {
-                if (this.Item.Quality < 50)
-                {
-                    this.Item.Quality = this.Item.Quality + 1;
-                }
+                base.UpdateQuality();
             }
         }
 

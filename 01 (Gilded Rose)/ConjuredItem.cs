@@ -9,11 +9,7 @@ namespace RefactorThis.GildedRose
         public override void UpdateQuality()
         {
             base.UpdateQuality();
-
-            if (Item.Quality > 0)
-            {
-                Item.Quality = Item.Quality - 1;
-            }
+            base.UpdateQuality();
         }
     }
 }

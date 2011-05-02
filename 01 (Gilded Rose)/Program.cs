@@ -66,7 +66,8 @@ namespace RefactorThis.GildedRose
 
         private static void UpdateQuality()
         {
-            foreach (var item in Items.Select(i => new ExtendedItem(i)))
+            var factory = new ItemFactory();
+            foreach (var item in Items.Select(factory.Create))
             {
                 item.UpdateQuality();
                 item.UpdateSellIn();

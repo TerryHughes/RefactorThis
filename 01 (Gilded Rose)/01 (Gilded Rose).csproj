@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="ExtendedItem.cs" />
     <Compile Include="Item.cs" />
+    <Compile Include="LegendaryItem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

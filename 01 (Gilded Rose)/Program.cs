@@ -64,6 +64,7 @@ namespace RefactorThis.GildedRose
             Assert(new List<int> { -17, -25, -22, 0, -12, -24 }, new List<int> { 0, 50, 0, 80, 0, 0 });
         }
 
+        // NOTE: This really should be called UpdateInventory.
         private static void UpdateQuality()
         {
             var factory = new ItemFactory();

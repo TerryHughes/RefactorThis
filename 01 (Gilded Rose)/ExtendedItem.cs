@@ -9,20 +9,17 @@ namespace RefactorThis.GildedRose
             this.Item = item;
         }
 
-        public void UpdateQuality()
+        public virtual void UpdateQuality()
         {
             if (this.Item.Name != "Aged Brie" && this.Item.Name != "Backstage passes to a TAFKAL80ETC concert")
             {
                 if (this.Item.Quality > 0)
                 {
-                    if (this.Item.Name != "Sulfuras, Hand of Ragnaros")
+                    this.Item.Quality = this.Item.Quality - 1;
+
+                    if (this.Item.Name == "Conjured Mana Cake")
                     {
                         this.Item.Quality = this.Item.Quality - 1;
-
-                        if (this.Item.Name == "Conjured Mana Cake")
-                        {
-                            this.Item.Quality = this.Item.Quality - 1;
-                        }
                     }
                 }
             }
@@ -54,12 +51,9 @@ namespace RefactorThis.GildedRose
             }
         }
 
-        public void UpdateSellIn()
+        public virtual void UpdateSellIn()
         {
-            if (this.Item.Name != "Sulfuras, Hand of Ragnaros")
-            {
-                this.Item.SellIn = this.Item.SellIn - 1;
-            }
+            this.Item.SellIn = this.Item.SellIn - 1;
 
             if (this.Item.SellIn < 0)
             {
@@ -69,10 +63,7 @@ namespace RefactorThis.GildedRose
                     {
                         if (this.Item.Quality > 0)
                         {
-                            if (this.Item.Name != "Sulfuras, Hand of Ragnaros")
-                            {
-                                this.Item.Quality = this.Item.Quality - 1;
-                            }
+                            this.Item.Quality = this.Item.Quality - 1;
                         }
                     }
                     else

@@ -5,5 +5,13 @@ namespace RefactorThis.GildedRose
         public LegendaryItem(Item item) : base(item)
         {
         }
+
+        public override void UpdateQuality()
+        {
+        }
+
+        public override void UpdateSellIn()
+        {
+        }
     }
 }

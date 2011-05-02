@@ -9,6 +9,11 @@ namespace RefactorThis.GildedRose
                 return new LegendaryItem(item);
             }
 
+            if (item.Name == "Aged Brie" || item.Name == "Backstage passes to a TAFKAL80ETC concert")
+            {
+                return new ValuedItem(item);
+            }
+
             return new ExtendedItem(item);
         }
     }

@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConjuredItem.cs" />
     <Compile Include="IncreasinglyValuedItem.cs" />
     <Compile Include="ValuedItem.cs" />
     <Compile Include="ExtendedItem.cs" />

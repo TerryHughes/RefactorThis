@@ -19,6 +19,11 @@ namespace RefactorThis.GildedRose
                 return new IncreasinglyValuedItem(item);
             }
 
+            if (item.Name == "Conjured Mana Cake")
+            {
+                return new ConjuredItem(item);
+            }
+
             return new ExtendedItem(item);
         }
     }

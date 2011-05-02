@@ -13,13 +13,13 @@ namespace RefactorThis.GildedRose
         {
             if (this.Item.Quality > 0)
             {
-                this.Item.Quality = this.Item.Quality - 1;
+                this.Item.Quality--;
             }
         }
 
         public virtual void UpdateSellIn()
         {
-            this.Item.SellIn = this.Item.SellIn - 1;
+            this.Item.SellIn--;
 
             if (this.Item.SellIn < 0)
             {

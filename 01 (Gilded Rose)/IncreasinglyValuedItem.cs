@@ -27,7 +27,7 @@ namespace RefactorThis.GildedRose
 
             if (this.Item.SellIn < 0)
             {
-                this.Item.Quality = this.Item.Quality - this.Item.Quality;
+                this.Item.Quality = 0;
             }
         }
     }

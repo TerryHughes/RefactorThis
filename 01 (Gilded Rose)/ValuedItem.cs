@@ -10,7 +10,7 @@ namespace RefactorThis.GildedRose
         {
             if (this.Item.Quality < 50)
             {
-                this.Item.Quality = this.Item.Quality + 1;
+                this.Item.Quality++;
             }
         }
     }

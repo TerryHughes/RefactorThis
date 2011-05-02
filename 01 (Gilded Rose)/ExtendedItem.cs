@@ -14,11 +14,6 @@ namespace RefactorThis.GildedRose
             if (this.Item.Quality > 0)
             {
                 this.Item.Quality = this.Item.Quality - 1;
-
-                if (this.Item.Name == "Conjured Mana Cake")
-                {
-                    this.Item.Quality = this.Item.Quality - 1;
-                }
             }
         }
 
